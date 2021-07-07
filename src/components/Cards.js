@@ -12,31 +12,33 @@ const Cards = () => {
             <CardItem
               src=""
               text=""
-              label=""
+              label="Adventure"
               path="/services"
             />
             <CardItem
               src=""
               text=""
-              label=""
+              label="Exciting"
+              path="/services"
+            />
+          </ul>
+          <ul className="cards-items">
+            <CardItem
+              src=""
+              text=""
+              label="Luxury"
               path="/services"
             />
             <CardItem
               src=""
               text=""
-              label=""
+              label="Adventure"
               path="/services"
             />
             <CardItem
               src=""
               text=""
-              label=""
-              path="/services"
-            />
-            <CardItem
-              src=""
-              text=""
-              label=""
+              label="Exciting"
               path="/services"
             />
           </ul>
