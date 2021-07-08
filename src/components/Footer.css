@@ -129,6 +129,10 @@
   margin-bottom: 16px;
 }
 
+.footer-logo-img {
+  align-self: center;
+}
+
 .copyright {
   color: white;
   margin-bottom: 16px;

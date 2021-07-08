@@ -21,7 +21,15 @@ h1 {
   margin: 48px 0 44px;
 }
 
+.cards-items-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 24px;
+}
+
 .cards-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 24px;
 }
 
@@ -99,20 +107,32 @@ h1 {
   line-height: 24px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .content-blog-container {
     width: 84%;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 994px) {
+  .cards-item {
+    margin-bottom: 32px;
+  }
+
+  .cards-items-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+  
   .cards-items {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .cards-item {
-    margin-bottom: 32px;
+@media only screen and (max-width: 768px) {
+  .cards {
+    padding: 16px;
   }
 }

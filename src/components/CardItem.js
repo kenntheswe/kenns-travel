@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CardItem = (props) => {
   return (
-    <div>
-      <li className="cards-item">
+    <div className="cards-item">
         <Link className="cards-item-link" to={props.path}>
           <figure className="cards-item-pic-wrap" data-category={props.label}>
             <img
@@ -17,8 +16,7 @@ const CardItem = (props) => {
             <h5 className="cards-item-text">{props.text}</h5>
           </div>
         </Link>
-      </li>
-    </div>
+      </div>
   );
 };
 

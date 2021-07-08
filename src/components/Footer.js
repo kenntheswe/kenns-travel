@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom'
 
 import './Footer.css'
 
+import Logo from '../images/logo.png'
+
 const Footer = () => {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the newsletter to receive our best vacation deals!
+          Join the newsletter to receive our best deals!
         </p>
         <p className="footer-subscription-text">
           You can unsubscribe at any time.
@@ -49,10 +51,10 @@ const Footer = () => {
           </div>
           <div className="footer-link-items">
             <h2>Follow Us</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Twiiter</Link>
-            <Link to="/">YouTube</Link>
+            <Link to={{ pathname: "https://www.instagram.com/kennvungan/" }} target="_blank">Instagram</Link>
+            <Link to={{ pathname: "https://www.facebook.com/kennvun/" }} target="_blank">Facebook</Link>
+            <Link to={{ pathname: "https://twitter.com/kennvungan" }} target="_blank">Twitter</Link>
+            <Link to={{ pathname: "https://www.youtube.com/channel/UCLEZau3eHxdhcUtbWgay7sA" }} target="_blank">YouTube</Link>
           </div>
         </div>
       </div>
@@ -60,17 +62,17 @@ const Footer = () => {
         <div className="social-media-wrapper">
           <div className="footer-logo">
             <Link to="/" className="company-logo">
-              KENN'S TRAVEL <i className="fas fa-route"/>
+              KENN'S <img src={Logo} alt="logo" className="footer-logo-img" style={{width: '24px'}}/>
             </Link>
           </div>
           <small className="copyright">
-            &copy; Kenn's Travel 2021. All Rights Reserved.
+            &copy; Kenn's 2021. All Rights Reserved.
           </small>
           <div className="social-icons">
-            <Link to="/" target="_blank" className="social-icon-link linkedin" aria-label="LinkedIn">
+            <Link to={{ pathname: "https://www.linkedin.com/in/kennvungan/" }} target="_blank" className="social-icon-link linkedin" aria-label="LinkedIn">
               <i className="fab fa-linkedin"/>
             </Link>
-            <Link to="/" target="_blank" className="social-icon-link github" aria-label="Github">
+            <Link to={{ pathname: "https://github.com/Kenn-0" }} target="_blank" className="social-icon-link github" aria-label="Github">
               <i className="fab fa-github"/>
             </Link>
           </div>

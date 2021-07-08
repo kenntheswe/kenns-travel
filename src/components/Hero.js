@@ -7,7 +7,6 @@ import './Hero.css'
 const Hero = () => {
   return (
     <div className="hero-container">
-      <video></video>
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="hero-btns">

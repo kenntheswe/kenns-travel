@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Button from './Button'
 
 import './Navbar.css'
+import Logo from '../images/logo.png'
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            KENN'S TRAVEL <i className="fas fa-route"/>
+            KENN'S <img src={Logo} alt="logo" className="logo" style={{ width: '28px', marginLeft: '8px' }}/>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
